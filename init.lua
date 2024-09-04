@@ -54,11 +54,12 @@ local content =
 	"GRID_MIN_UPDATES_PER_FRAME=" .. get_setting_i("min") .. "\"\n" ..
 	"GRID_FLEXIBLE_MAX_UPDATES=" .. get_setting_i("flex") .. "\"\n" ..
 	"THROW_UI_TIMESTEP_COEFF=\"" .. get_setting_i("throw") .. "\"\n" ..
-	"GRID_RENDER_TILE_SIZE=" .. get_setting_i("render") .. "\"\n" ..
-	"DRAW_PARALLAX_BACKGROUND=" .. get_setting_i("bg") .. "\"\n" ..
-	"DRAW_PARALLAX_BACKGROUND_BEFORE_DEPTH=" .. get_setting_i("parallax") .. "\"\n" ..
-	"UI_WOBBLE_AMOUNT_DEGREES=" .. get_setting_i("degrees") .. "\"\n" ..
-	"UI_WOBBLE_SPEED=" .. get_setting_i("wobble") .. "\"\n" ..
+	"GRID_RENDER_TILE_SIZE=\"" .. get_setting_i("render") .. "\"\n" ..
+	"DRAW_PARALLAX_BACKGROUND=\"" .. get_setting_i("bg") .. "\"\n" ..
+	"DRAW_PARALLAX_BACKGROUND_BEFORE_DEPTH=\"" .. get_setting_i("parallax") .. "\"\n" ..
+	"UI_WOBBLE_AMOUNT_DEGREES=\"" .. get_setting_i("degrees") .. "\"\n" ..
+	"UI_WOBBLE_SPEED=\"" .. get_setting_i("wobble") .. "\"\n" ..
+	(get_setting_i("seed") == 0 and "" or ("WORLD_SEED=\"" .. get_setting_i("seed") .."\"\n")) .. 
 	-- -- "INVENTORY_STASH_X=\"" .. 185 .. "\"\n" ..
 	-- -- "INVENTORY_STASH_Y=\"" .. 40 .. "\"\n" ..
 	" >\n</MagicNumbers>"
