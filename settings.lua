@@ -303,6 +303,16 @@ mod_settings =
 		scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 	},
 	{
+		id = "seed",
+		ui_name = "World Seed",
+		ui_description = "The world seed",
+		value_default = "0",
+		text_max_length = 10,
+		allowed_characters = "0123456789",
+		change_fn = mod_setting_change_callback,
+		scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+	},
+	{
 		id = "reset_all",
 		ui_name = "Reset All",
 		SAVE_NOT = true,
